@@ -1,0 +1,133 @@
+/* start global style   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: 'Interbold';
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Interregular';
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Intersemibold';
+    src: url(../assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+ul {
+  list-style: none;
+}
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: #1F1F1F;
+  --grey-800: rgb(31, 31, 31);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background: var(--grey-900);
+  font-size:14px ;
+}
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* end global style   */
+
+/* start card style  */
+.card{
+    background-color: var(--grey-800);
+    width: 90%;
+    text-align: center;
+    padding: 30px 20px 10px ;
+    border-radius: 15px;
+    color: var(--white);
+}
+.card-img{
+    border-radius: 50%;
+    width: 40%;
+    margin: auto;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.card-text h1{
+  font-size: 30px;
+  margin-block: 8px 20px;
+  font-family: 'Intersemibold';
+  font-weight: 600;
+
+}
+.card-text h2{
+  color: var(--green);
+  font-size: 16px;
+  margin-block: 8px 20px;
+  font-family: 'Intersemibold';
+font-weight: 600;
+}
+.card-text p{
+  font-size: 23px;
+  margin-block: 8px 20px;
+  color: #7F7F7F;
+}
+
+.buttons p{
+  background-color: #333333;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Interregular';
+
+  cursor: pointer;
+  transition: background-color .3s ease , color .3s ease;
+}
+.buttons p:hover{
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* end card style  */
+
+
+/* start media query */
+@media screen and (min-width: 640px) {
+  .card{
+      width: 75%;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 50%;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .card{
+          width: 40%;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        .card{
+            width: 25%;
+          }
+        }
+/* end media query */
